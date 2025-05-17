@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Nút Back -->
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#000000" />
+
+    <!-- Tiêu đề (Tên trái cây) -->
+    <TextView
+        android:id="@+id/fruit_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="QUẢ TÁO\nAPPLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nội dung thông tin -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fruit_title"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/fruit_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin:\nTáo ta hay táo chua (danh pháp hai phần: Ziziphus mauritiana) là loài cây ăn quả của vùng nhiệt đới, thuộc về họ Táo (Rhamnaceae). Tại Trung Quốc, có thể gặp loài táo chua, táo Ấn Độ hay táo Điền (táo Vân Nam), táo gai Vân Nam. Cây có thể đạt tới độ rật nhánh thưa, thành chùm ở các khu vực khô và cao tới 12 mét và đạt tuổi thọ 25 năm. Nức gốc ngọn gốc đỏ hoặc Ấn Độ (chùm lưa Ấn Độ) màu trắng, táo đỏ (mắc cọ) tím thẫm ở châu Phi. Quả là loại quả hạch, khi chín mềm, chua, nhiễu nước, có vị ngọt. Các quả chính vẻ ngọt ở các khóm thổi gian khác nhau ngay cả khi chúng còn xanh và thường không chín. Kích thước và hình dạng quả phụ thuộc vào các giống khác nhau trong nhiều loại cây trồng. Quả được sử dụng để ăn khi còn xanh hoặc ngâm muối, sấy khô, làm mứt hoặc làm đồ uống. Nó là một loại quả giàu chất dinh dưỡng và chứa nhiều vitamin C."
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
